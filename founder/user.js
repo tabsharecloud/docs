@@ -1,4 +1,4 @@
-var store="https://users.tabshare.cloud/founder"
+var store="https://users-a6eb349d.cdn.memsites.com/""
 var liveDir=store+"/live/";
 var staticDir=store+"/static/";
 
