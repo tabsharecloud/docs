@@ -1,4 +1,4 @@
-var store="https://users-a6eb349d.cdn.memsites.com/";
+var store="https://users-a6eb349d.cdn.memsites.com/founder";
 var liveDir=store+"/live/";
 var staticDir=store+"/static/";
 
