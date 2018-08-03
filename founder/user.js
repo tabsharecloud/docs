@@ -1,4 +1,5 @@
-var store="https://users-a6eb349d.cdn.memsites.com/founder";
+var store="https://nimble-fig.cloudvent.net/users/founder";
+
 var liveDir=store+"/live/";
 var staticDir=store+"/static/";
 
