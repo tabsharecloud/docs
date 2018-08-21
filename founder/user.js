@@ -1,4 +1,4 @@
-var store='https://nimble-fig.cloudvent.net/users/founder';
+	var store='https://nimble-fig.cloudvent.net/users/founder';
 var liveDir=store+'/live/';
 var staticDir=store+'/static/';
 
@@ -17,6 +17,16 @@ if(location.href.indexOf('#tabshare')>0){loadRecord()}
 var cicdn='https://a1ugk98en.cloudimg.io/cdno/n/n/https://img.tabshare.cloud';
 document.body.style.backgroundImage='url('+cicdn+'/paper/escher-sq.png)';
 $id('png-ico').href=cicdn+'/ico/favicon-16x16.png';
-$id('old-ico').href=cicdn+'/ico/favicon.ico';
 $id('touch-ico').href=cicdn+'/ico/apple-touch-icon.png';
 $id('mac-ico').href=cicdn+'/ico/safari-pinned-tab.svg';
+
+// $id('old-ico').href=cicdn+'/ico/favicon.ico';
+
+function changeViewPort(key, val) {
+    var reg = new RegExp(key, "i"), oldval = document.querySelector('meta[name="viewport"]').content;
+    var newval = reg.test(oldval) ? oldval.split(/,\s*/).map(function(v){ return reg.test(v) ? key+"="+val : v; }).join(", ") : oldval+= ", "+key+"="+val ;
+    document.querySelector('meta[name="viewport"]').content = newval;
+}
+
+window.addEventListener("orientationchange", function() { 
+changeViewPort("maximum-scale",1); changeViewPort("maximum-scale",10);	
