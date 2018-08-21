@@ -28,5 +28,9 @@ function changeViewPort(key, val) {
     document.querySelector('meta[name="viewport"]').content = newval;
 }
 
-window.addEventListener("orientationchange", function() { 
-changeViewPort("maximum-scale",1); changeViewPort("maximum-scale",10);}
+if( /iPad|iPhone|iPod|Android/i.test(navigator.userAgent) ){
+    window.addEventListener("orientationchange", function() { 
+        changeViewPort("maximum-scale", 1);
+        changeViewPort("maximum-scale", 10);
+    }
+}
