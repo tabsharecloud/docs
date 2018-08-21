@@ -29,4 +29,4 @@ function changeViewPort(key, val) {
 }
 
 window.addEventListener("orientationchange", function() { 
-changeViewPort("maximum-scale",1); changeViewPort("maximum-scale",10);	
+changeViewPort("maximum-scale",1); changeViewPort("maximum-scale",10);}
